@@ -15,7 +15,8 @@ defmodule Chatbaz.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Chatbaz.PubSub},
       # Start the Endpoint (http/https)
-      ChatbazWeb.Endpoint
+      ChatbazWeb.Endpoint,
+      ChatbazWeb.Presence,
       # Start a worker by calling: Chatbaz.Worker.start_link(arg)
       # {Chatbaz.Worker, arg}
     ]
