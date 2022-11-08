@@ -12,6 +12,7 @@ import Config
 config :chatbaz, ChatbazWeb.Endpoint,
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   url: [host: "jubilant-lavender-bedbug.com", port: 80],
+  check_origin: ["jubilant-lavender-bedbug.com"],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
